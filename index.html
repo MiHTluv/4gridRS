@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./grid.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;         
+        }
+        .container {
+            text-align: center;
+            background-color: antiquewhite;
+        }
+        .course-item {
+            background-color: orange;
+            height: 260px;
+        }
+        h1 {
+            color: #fff;
+            line-height: 260px;
+            margin: 0;
+        }
+        .category ul{
+            background-color: aqua;
+            padding: 0;
+            margin: 0;
+        }
+        .category li {
+            list-style: none;
+            font-size: 1.3rem;
+            padding: 12px 4px;
+        }
+        .my-column {
+            min-height: 50vh;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid wide container">
+        <div class="row">
+            <div class="col l-3 m-0">
+                <div class="category">
+                    <ul>
+                        <li>Javascript</li>
+                        <li>HTML, CSS</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col l-9 m-12">
+                <div class="row">
+                    <div class="col l-4 m-6 c-12">
+                        <div class="course-item">
+                            <h1>Course 1</h1>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="course-item">
+                            <h1>Course 2</h1>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="course-item">
+                            <h1>Course 3</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="grid wide container">
+        <div class="row">
+            <div class="col l-6 l-o-3 m-8 m-o-2">
+                <div class="my-column">
+                    <h1>Column 1</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
